@@ -48,8 +48,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(var(--darkGrey), var(--darkGrey));
-    /* background-color: var(--darkGrey); */
+    background: radial-gradient(circle at top, var(--color1), var(--color8)85%);
     border-radius: 15px;
 }
 
