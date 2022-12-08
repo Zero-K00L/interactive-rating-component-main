@@ -38,6 +38,8 @@ body {
     border-radius: 15px;
 }
 
+/* Rating state start */
+
 .star_icon_container {
     width: 100%;
     max-width: 40px;
@@ -54,6 +56,10 @@ body {
     overflow: visible;
     width: 15px;
     height: 14px;
+}
+
+.star_icon_desktop {
+    display: none;
 }
 
 .rating_header {
@@ -91,7 +97,8 @@ body {
     margin-right: 19px;
     margin-bottom: 4px;
     float: left;
-    width: 41px;
+    width: 100%;
+    max-width: 41px;
     height: 42px;
     background-color: var(--darkBlue);
     color: var(--mediumGrey);
@@ -130,9 +137,194 @@ body {
     border-radius: 25px;
     padding-top: 4px;
     transition: 100ms ease-in-out;
+    cursor: pointer;
 }
 
 .submit_btn:hover {
     background-color: var(--white);
     color: var(--orange);
+}
+
+.hidden {       /* class used to hide content for switching pages */
+    display: none;
+    opacity: 0;
+}
+
+/* Rating state end */
+
+/* Thank you state start */
+#thanks_content_container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.submit_img_mobile {
+    width: 100%;
+    max-width: 143px;
+    height: 96px;
+    margin: 34px auto 23px auto;
+    position: relative;
+    left: 1px;
+}
+
+.submit_img_desktop {
+    display: none;
+}
+
+.rating_feedback_container {
+    margin: 0 auto;
+    width: 168px;
+    height: 33px;
+    background-color: var(--darkBlue);
+    border-radius: 25px;
+    color: var(--orange);
+    position: relative;
+    left: 2px;
+}
+
+.thanks_header {
+    margin-top: 27px;
+    margin-bottom: 11px;
+    color: var(--white);
+    font-size: 23.5px;
+}
+
+.thanks_paragraph {
+    margin: 0 auto;
+    color: var(--mediumGrey);
+    font-size: 14px;
+    width: 92%;
+    line-height: 22px;
+}
+
+
+/* Thank you state end */
+
+/* Media Query */
+
+/* Large devices(laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .main {
+        max-width: 412px;
+        height: 417px;
+        border-radius: 31px;
+    }
+
+    /* Rating state start */
+
+    .star_icon_container {
+        margin: 32px 0 0 32px;
+        max-width: 48px;
+        height: 48px;
+    }
+
+    .star_icon_mobile {
+        display: none;
+    }
+
+    .star_icon_desktop {
+        display: block;
+        padding-top: 1px;
+    }
+
+    .rating_header {
+        margin-top: 33px;
+        margin-bottom: -6px;
+        margin-left: 32px;
+        font-size: 27.7px;
+    }
+
+    .rating_paragraph {
+        margin-left: 32px;
+        margin-bottom: 27px;
+        font-size: 15px;
+        line-height: 24px;
+        width: 88%;
+    }
+
+    .rating_container {
+        margin-left: 32px;
+    }
+
+    .rating_choice {
+        width: 100%;
+        max-width: 51px;
+        height: 51px;
+        margin-right: 21.3px;
+        padding-right: 0px;
+        font-size: 17px;
+        padding-top: 2px;
+    }
+
+    .rating_2 {
+        padding-left: 1px;
+    }
+
+    .rating_3 {
+        padding-left: 3px;
+    }
+
+    .rating_5 {
+        position: relative;
+        left: 1px;
+    }
+
+    .submit_btn {
+        max-width: 343px;
+    }
+
+    /* Rating state end */
+
+    /* Thank you state start */
+    
+    .submit_img_mobile {
+        display: none;
+    }
+
+    .submit_img_desktop {
+        display: block;
+        width: 100%;
+        max-width: 162px;
+        height: 108px;
+        margin: 44px auto 31px auto;
+        position: relative;
+        left: -3px;
+    }
+
+    .rating_feedback_container {
+        margin: 0 auto 8px auto;
+        width: 193px;
+        height: 32px;
+        background-color: var(--darkBlue);
+        border-radius: 25px;
+        color: var(--orange);
+        position: relative;
+        left: 1px;
+        top: 1px;
+    }
+
+    .thanks_header {
+        margin-top: 27px;
+        margin-bottom: 11px;
+        color: var(--white);
+        font-size: 27.5px;
+        position: relative;
+        left: 1px;
+        top: 1px;
+    }
+
+    .thanks_paragraph {
+        width: 83%;
+        font-size: 15px;
+        position: relative;
+        top: 0px;
+        left: -4px;
+        line-height: 23.5px;
+    }
+
+    /* Thank you state end */
+
+
+
 }

@@ -13,9 +13,9 @@
 
   <body>
     <main class="main"> 
-      <div id="rating_content_container">
+      <div id="rating_content_container" class="hidden">
         <div class="star_icon_container"> <!-- Rating state start -->
- <!--          <img class="star_icon_desktop" src="images/icon-star.svg">  -->
+          <img class="star_icon_desktop" src="images/icon-star.svg"> 
           <img class="star_icon_mobile" src="images/icon-star-mobile.svg">
         </div>
         <div class="rating_text_container">
@@ -24,11 +24,11 @@
         </div>
         <div class="rating_container">
           <ul class="rating_list">
-            <li class="rating_choice">1</li>
-            <li class="rating_choice">2</li>
-            <li class="rating_choice">3</li>
-            <li class="rating_choice">4</li>
-            <li class="rating_choice">5</li>
+            <li class="rating_choice rating_1">1</li>
+            <li class="rating_choice rating_2">2</li>
+            <li class="rating_choice rating_3">3</li>
+            <li class="rating_choice rating_4">4</li>
+            <li class="rating_choice rating_5">5</li>
           </ul>
         </div>
         <div class="button_container">
@@ -36,42 +36,21 @@
         </div> <!-- Rating state end -->
       </div>
 
+      <div id="thanks_content_container">
+        <img class="submit_img_mobile" src="images/illustration-thank-you.svg"> <!-- <!-- Thank you state start -->
+        <img class="submit_img_desktop" src="images/illustration-thank-you.svg">
+        <div class="rating_feedback_container">
+          <p class="submitted_rating"></p>
+        </div> 
+        <div class="thanks_text_container">
+          <h2 class="thanks_header">Thank you!</h2>
+          <p class="thanks_paragraph">
+            We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+        </div>    
+      </div>   <!-- Thank you state end -->
+      
 
-      <!-- <img class="submit_img" src="images/illustration-thank-you.svg"> --> <!-- Thank you state start -->
-   <!--    <div class="selected_container">
-        <p class="submitted_rating"></p>
-      </div>
-      <div class="thanks_text_container">
-        <h2 class="thanks_header"></h2>
-        <p class="thanks_paragraph">
-          We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
-      </div>  --> <!-- Thank you state end -->
 
     </main>
-
-    
-
-   <!--   -->
-
-
-    <!-- 1 2 3 4 5 -->
-
-    <!-- Submit -->
-
-    
-
-    
-
-    <!-- You selected --> <!-- Add rating here --> <!-- out of 5 -->
-
-   <!--  Thank you! -->
-
-<!--     We appreciate you taking the time to give a rating. If you ever need more support, 
-    don’t hesitate to get in touch! -->
-
-    
-
-    
-
   </body>
 </html>
