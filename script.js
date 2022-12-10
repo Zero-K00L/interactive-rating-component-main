@@ -16,11 +16,38 @@ for (li in buttons) {
 }
 
 submitBtn.addEventListener('click', function(){
+    var error = document.querySelector('.error_container');
+    var ul = document.getElementById('rating_list');
+    var items = ul.getElementsByTagName('li');
+    for (var i = 0; i < items.length; i++) {
+        if (items[i].classList.contains('color_change')){
+            if(thanksPage.classList.contains('hidden')) 
+            error.classList.add('hidden');
+            thanksPage.classList.remove('hidden');
+            ratingPage.classList.add('hidden');
+            
+        }
+        else {
+            error.classList.remove('hidden');
+        }
+    
+    
+    }
+
+});
+
+/* var ul = document.getElementById('rating_list');
+var items = ul.getElementsByTagName('li');
+for (var i = 0; i < items.length; i++) {
+    if (items[i].classList.contains('color_change'))
+}
+ */
+
+
+/* submitBtn.addEventListener('click', function(){
 
     if(thanksPage.classList.contains('hidden')) {
         thanksPage.classList.remove('hidden');
         ratingPage.classList.add('hidden');
     }
-});
-
-
+}); */
