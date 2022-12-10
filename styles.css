@@ -11,13 +11,7 @@
 
     /* ColorGradient */
     --color1: #232A34;
-    --color2: #212832;
-    --color3: #202731;
-    --color4: #1F2630;
-    --color5: #1E252F;
-    --color6: #1C232D;
-    --color7: #19202A;
-    --color8: #171E28;
+    --color2: #171E28;
 }
 
 html {
@@ -51,7 +45,7 @@ body {
 .error_message {
     color: var(--white);
     padding-top: 4px;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .main {
@@ -62,7 +56,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: radial-gradient(circle at top, var(--color1), var(--color8)85%);
+    background: radial-gradient(circle at top, var(--color1), var(--color2)85%);
     border-radius: 15px;
 }
 
@@ -93,7 +87,7 @@ body {
     margin-top: 18px;
     margin-left: 24px;
     margin-bottom: -4px;
-    font-size: 23.7px;
+    font-size: 1.48125rem;
     font-weight: 700;
     color: var(--white);
 }
@@ -102,7 +96,7 @@ body {
     margin-left: 24px;
     margin-bottom: 28px;
     color: var(--lightGrey);
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 22px;
     width: 89%;
 }
@@ -126,7 +120,7 @@ body {
     width: 100%;
     max-width: 41px;
     height: 42px;
-    font-size: 14px;
+    font-size: 0.875rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -227,13 +221,13 @@ body {
     margin-top: 27px;
     margin-bottom: 11px;
     color: var(--white);
-    font-size: 23.5px;
+    font-size: 1.46875rem;
 }
 
 .thanks_paragraph {
     margin: 0 auto;
     color: var(--mediumGrey);
-    font-size: 14px;
+    font-size: 0.875rem;
     width: 92%;
     line-height: 22px;
 }
@@ -268,13 +262,13 @@ body {
         margin-top: 33px;
         margin-bottom: -6px;
         margin-left: 32px;
-        font-size: 27.7px;
+        font-size: 1.73125rem;
     }
 
     .rating_paragraph {
         margin-left: 32px;
         margin-bottom: 27px;
-        font-size: 15px;
+        font-size: 0.9375rem;
         line-height: 24px;
         width: 88%;
     }
@@ -289,7 +283,7 @@ body {
         height: 51px;
         margin-right: 21.3px;
         padding-right: 0px;
-        font-size: 17px;
+        font-size: 1.0625rem;
         padding-top: 2px;
     }
 
@@ -342,7 +336,7 @@ body {
         margin-top: 27px;
         margin-bottom: 11px;
         color: var(--white);
-        font-size: 27.5px;
+        font-size: 1.71875rem;
         position: relative;
         left: 1px;
         top: 1px;
@@ -350,7 +344,7 @@ body {
 
     .thanks_paragraph {
         width: 83%;
-        font-size: 15px;
+        font-size: 0.9375rem;
         position: relative;
         top: 0px;
         left: -4px;
