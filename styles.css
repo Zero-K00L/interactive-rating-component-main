@@ -228,6 +228,11 @@ body {
     left: 2px;
 }
 
+#submitted_rating {
+    position: relative;
+    top: -8px;
+}
+
 .thanks_header {
     margin-top: 27px;
     margin-bottom: 11px;
