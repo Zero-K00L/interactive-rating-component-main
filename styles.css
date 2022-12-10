@@ -34,7 +34,6 @@ body {
     font-family: 'Overpass', sans-serif;
     font-weight: 400; 
     overflow-y: hidden;
-
 }
 
 .error_container {
@@ -68,7 +67,6 @@ body {
 }
 
 /* Rating state start */
-
 .star_icon_container {
     width: 100%;
     max-width: 40px;
@@ -98,7 +96,6 @@ body {
     font-size: 23.7px;
     font-weight: 700;
     color: var(--white);
-    
 }
 
 .rating_paragraph {
@@ -129,8 +126,6 @@ body {
     width: 100%;
     max-width: 41px;
     height: 42px;
-/*     background-color: var(--darkBlue);
-    color: var(--mediumGrey); */
     font-size: 14px;
     border-radius: 50%;
     display: flex;
@@ -176,7 +171,6 @@ body {
 }
 
 /* Helper Classes */
-
 .hidden {       /* class used to hide content for switching pages */
     display: none;
     opacity: 0;
@@ -191,10 +185,6 @@ body {
     background-color: var(--mediumGrey);
     color: var(--white);
 }
-
-
-
-
 /* Rating state end */
 
 /* Thank you state start */
@@ -247,12 +237,9 @@ body {
     width: 92%;
     line-height: 22px;
 }
-
-
 /* Thank you state end */
 
 /* Media Query */
-
 /* Large devices(laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .main {
@@ -262,7 +249,6 @@ body {
     }
 
     /* Rating state start */
-
     .star_icon_container {
         margin: 32px 0 0 32px;
         max-width: 48px;
@@ -323,11 +309,9 @@ body {
     #submit_btn {
         max-width: 343px;
     }
-
     /* Rating state end */
 
     /* Thank you state start */
-    
     .submit_img_mobile {
         display: none;
     }
@@ -372,9 +356,5 @@ body {
         left: -4px;
         line-height: 23.5px;
     }
-
     /* Thank you state end */
-
-
-
 }

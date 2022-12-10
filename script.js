@@ -5,7 +5,8 @@ const submitBtn = document.querySelector('#submit_btn');
 const buttons = document.querySelectorAll('li');
 var error = document.querySelector('.error_container');
 
-
+/* Changes color of selected rating number and adds the message to the thank you page 
+   Depending on what selection was made*/
 for (li in buttons) {                       
    buttons[li].onclick = function() {
        buttons.forEach(function(btn){
@@ -20,29 +21,30 @@ for (li in buttons) {
             if (items[i].matches(".rating_1.color_change")) {
                 console.log("we got here")
                 message.innerHTML = "You selected 1 out of 5";
-
             }
             
             else if (items[i].matches(".rating_2.color_change")) {
                 message.innerHTML = "You selected 2 out of 5";
-
             }
+
             else if (items[i].matches(".rating_3.color_change")) {
                 message.innerHTML = "You selected 3 out of 5";
-
             }
+
             else if (items[i].matches(".rating_4.color_change")) {
                 message.innerHTML = "You selected 4 out of 5";
-
             }
+
             else if (items[i].matches(".rating_5.color_change")) {
                 message.innerHTML = "You selected 5 out of 5";
-
             }
         }
    }
 }
 
+
+/* Changes page content to thank you page by adding hidden class to rating page. 
+   Will display error message if no selection is made when the submit button is clicked */
 submitBtn.addEventListener('click', function(){
     var error = document.querySelector('.error_container');
     var ul = document.getElementById('rating_list');
@@ -54,6 +56,7 @@ submitBtn.addEventListener('click', function(){
                 ratingPage.classList.add('hidden');
             }  
         }
+
         else if(ratingPage.classList.contains('hidden')) {
             error.classList.add('hidden');
         }
@@ -62,7 +65,7 @@ submitBtn.addEventListener('click', function(){
             error.classList.add('hidden');
         }
 
-        else{
+        else {
             error.classList.remove('hidden');
         }   
     }
