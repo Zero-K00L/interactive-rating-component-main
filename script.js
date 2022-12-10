@@ -58,97 +58,14 @@ submitBtn.addEventListener('click', function(){
             error.classList.add('hidden');
         }
 
-        else {
+        else if(items[4].classList.contains('color_change')) {
+            error.classList.add('hidden');
+        }
+
+        else{
             error.classList.remove('hidden');
         }   
     }
 });
 
 
-/* var message = document.getElementById('submitted_rating');
-var ul = document.getElementById('rating_list');
-var items = ul.getElementsByTagName('li');
-for (var i = 0; i < items.length; i++) {
-    if (items[i].classList.contains("color_change")) {
-        console.log("we got here")
-        message.innerHTML = "You selected 1 out of 5";
-
-    }
-    
-    else if (items[i].classList.contains("color_change")) {
-        message.innerHTML = "You selected 2 out of 5";
-
-    }
-}
- */
-
-
-
-/* var ul = document.getElementById('rating_list');
-var items = ul.getElementsByTagName('li');
-for (var i = 0; i < items.length; i++) {
-    if (items[i].classList.contains('color_change'))
-}
- */
-
-
-/* submitBtn.addEventListener('click', function(){
-
-    if(thanksPage.classList.contains('hidden')) {
-        thanksPage.classList.remove('hidden');
-        ratingPage.classList.add('hidden');
-    }
-}); */
-
-
-
-
-
-
-/* submitBtn.addEventListener('click', function(){
-    var error = document.querySelector('.error_container');
-    var ul = document.getElementById('rating_list');
-    var items = ul.getElementsByTagName('li');
-    for (var i = 0; i < items.length; i++) {
-        if (items[i].classList.contains('color_change')){
-            if(thanksPage.classList.contains('hidden')){
-                thanksPage.classList.remove('hidden');
-                ratingPage.classList.add('hidden');
-            }  
-
-        }
-
-        else {
-            error.classList.remove('hidden');
-        }   
-    }
-}); */
-
-
-
-
-/* var message = document.getElementById('submitted_rating');
-var ul = document.getElementById('rating_list');
-var items = ul.getElementsByTagName('li');
-for (var i = 0; i < items.length; i++) {
-    if (items[i].matches(".rating_1.color_change")) {
-        console.log("we got here")
-        message.innerHTML = "You selected 1 out of 5";
-    }
-    
-    else if (items[i].matches(".rating_2.color_change")) {
-        message.innerHTML = "You selected 2 out of 5";
-    }
-} */
-
-
-
-/* for (li in buttons) {                       
-    buttons[li].onclick = function() {
-        buttons.forEach(function(btn){
-          btn.classList.remove('color_change');
-        })
-        this.classList.add('color_change');
-        error.classList.add('hidden');
-    }
- } */
