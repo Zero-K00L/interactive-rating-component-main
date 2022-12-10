@@ -12,8 +12,11 @@
   </head>
 
   <body>
+    <div class="error_container hidden">
+      <p class="error_message">Please select a rating.</p>
+    </div>
     <main class="main"> 
-      <div id="rating_content_container" class="hidden">
+      <div class="rating_content_container">
         <div class="star_icon_container"> <!-- Rating state start -->
           <img class="star_icon_desktop" src="images/icon-star.svg"> 
           <img class="star_icon_mobile" src="images/icon-star-mobile.svg">
@@ -23,20 +26,20 @@
           <p class="rating_paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
         </div>
         <div class="rating_container">
-          <ul class="rating_list">
-            <li class="rating_choice rating_1">1</li>
-            <li class="rating_choice rating_2">2</li>
-            <li class="rating_choice rating_3">3</li>
-            <li class="rating_choice rating_4">4</li>
-            <li class="rating_choice rating_5">5</li>
+          <ul id="rating_list">
+            <li class="rating_choice rating_1 color_default">1</li>
+            <li class="rating_choice rating_2 color_default">2</li>
+            <li class="rating_choice rating_3 color_default">3</li>
+            <li class="rating_choice rating_4 color_default">4</li>
+            <li class="rating_choice rating_5 color_default">5</li>
           </ul>
         </div>
         <div class="button_container">
-          <input class="submit_btn" type="submit" value="SUBMIT">
+          <input id="submit_btn" type="submit" value="SUBMIT">
         </div> <!-- Rating state end -->
       </div>
 
-      <div id="thanks_content_container">
+      <div class="thanks_content_container hidden">
         <img class="submit_img_mobile" src="images/illustration-thank-you.svg"> <!-- <!-- Thank you state start -->
         <img class="submit_img_desktop" src="images/illustration-thank-you.svg">
         <div class="rating_feedback_container">
