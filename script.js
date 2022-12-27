@@ -2,13 +2,13 @@ const pageSwitch = document.querySelector('.hidden');
 const ratingPage = document.querySelector('.rating_content_container');
 const thanksPage = document.querySelector('.thanks_content_container');
 const submitBtn = document.querySelector('#submit_btn');
-const buttons = document.querySelectorAll('li');
+const buttons = document.querySelectorAll('label');
 var error = document.querySelector('.error_container');
 
 /* Changes color of selected rating number and adds the message to the thank you page 
    Depending on what selection was made*/
-for (li in buttons) {                       
-   buttons[li].onclick = function() {
+for (e in buttons) {                       
+   buttons[e].onclick = function() {
        buttons.forEach(function(btn){
          btn.classList.remove('color_change');
        })
@@ -16,7 +16,7 @@ for (li in buttons) {
        error.classList.add('hidden');
         var message = document.getElementById('submitted_rating');
         var ul = document.getElementById('rating_list');
-        var items = ul.getElementsByTagName('li');
+        var items = ul.getElementsByTagName('label');
         for (var i = 0; i < items.length; i++) {
             if (items[i].matches(".rating_1.color_change")) {
                 console.log("we got here")
@@ -48,7 +48,7 @@ for (li in buttons) {
 submitBtn.addEventListener('click', function(){
     var error = document.querySelector('.error_container');
     var ul = document.getElementById('rating_list');
-    var items = ul.getElementsByTagName('li');
+    var items = ul.getElementsByTagName('label');
     for (var i = 0; i < items.length; i++) {
         if (items[i].classList.contains('color_change')){
             if(thanksPage.classList.contains('hidden')){
