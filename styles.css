@@ -38,6 +38,7 @@ body {
     height: 30px;
     border-radius: 10px;
     position: relative;
+    z-index: 1;
     top: 67px;
     text-align: center;
 }
